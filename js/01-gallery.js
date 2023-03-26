@@ -42,7 +42,7 @@ function onCloseModalClick(event) {
     if (event.code === "Escape") {
         openInstance.remove();
     }
-    window.removeEventListener('keydown', onCloseModalClick);  
+    // window.removeEventListener('keydown', onCloseModalClick);  
 }
 
 
