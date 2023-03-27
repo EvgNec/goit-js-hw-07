@@ -18,16 +18,8 @@ const galleryIt = galleryItems.map(function ({ preview, original, description })
 
 gallery.insertAdjacentHTML('beforeend', galleryIt);
 
-gallery.addEventListener('click', clickImage);
-
-
-function clickImage(event) {
-
-    event.preventDefault();
-
-    let gallery = new SimpleLightbox('.gallery__link',
+new SimpleLightbox('.gallery__link',
         {   captionsData: 'alt',
             captionPosition: 'bottom',
             captionDelay: 250,
         });
-}

@@ -41,8 +41,9 @@ function onCloseModalClick(event) {
     const openInstance = document.querySelector(".basicLightbox")
     if (event.code === "Escape") {
         openInstance.remove();
+           window.removeEventListener('keydown', onCloseModalClick);  
     }
-    // window.removeEventListener('keydown', onCloseModalClick);  
+
 }
 
 
